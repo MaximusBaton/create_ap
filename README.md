@@ -28,7 +28,7 @@
 
 ## Installation
 ### Generic
-    git clone https://github.com/oblique/create_ap
+    git clone https://github.com/MaximusBaton/create_ap
     cd create_ap
     make install
 
@@ -73,6 +73,9 @@
 
 ### Client Isolation:
     create_ap --isolate-clients wlan0 eth0 MyAccessPoint MyPassPhrase
+
+### IP address reservation (See [howto](howto/dhcp_address_reservation.md))
+    create_ap --dhcp-hosts ./dhcp_hosts.conf -g 192.168.1.1 MyAccessPoint MyPassPhrase
 
 ## Systemd service
 Using the persistent [systemd](https://wiki.archlinux.org/index.php/systemd#Basic_systemctl_usage) service
